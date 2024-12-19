@@ -1,0 +1,27 @@
+{
+  "name": "epi-style",
+  "displayName": "EPI-style",
+  "description": "theme based on EPITECH colors",
+  "version": "0.0.2",
+  "publisher": "Etienne-P",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "icon": "icon_epistyle.png",
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "EPI theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/EPI theme-color-theme.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com//epi-style"
+  }
+}
