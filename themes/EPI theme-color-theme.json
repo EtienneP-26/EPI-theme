@@ -31,7 +31,9 @@
 			"name": "Comment",
 			"scope": [
 				"comment",
-				"punctuation.definition.comment"
+				"punctuation.definition.comment",
+				"source.c comment",
+				"source.c punctuation.definition.comment"
 			],
 			"settings": {
 				"fontStyle": "italic",
@@ -42,7 +44,9 @@
 			"name": "Variables",
 			"scope": [
 				"variable",
-				"string constant.other.placeholder"
+				"string constant.other.placeholder",
+				"source.c variable",
+				"source.c string constant.other.placeholder"
 			],
 			"settings": {
 				"foreground": "#3db1ff"
@@ -51,7 +55,8 @@
 		{
 			"name": "Colors",
 			"scope": [
-				"constant.other.color"
+				"constant.other.color",
+				"source.c constant.other.color"
 			],
 			"settings": {
 				"foreground": "#e0e0e0"
@@ -61,7 +66,9 @@
 			"name": "Invalid",
 			"scope": [
 				"invalid",
-				"invalid.illegal"
+				"invalid.illegal",
+				"source.c invalid",
+				"source.c invalid.illegal"
 			],
 			"settings": {
 				"foreground": "#e40f32"
@@ -70,7 +77,8 @@
 		{
 			"name": "Storage modifiers",
 			"scope": [
-				"storage.modifier"
+				"storage.modifier",
+				"source.c storage.modifier"
 			],
 			"settings": {
 				"foreground": "#ffba52"
@@ -90,7 +98,19 @@
 				"punctuation.definition.tag.end.html",
 				"punctuation.section.embedded",
 				"keyword.other.template",
-				"keyword.other.substitution"
+				"keyword.other.substitution",
+				"source.c keyword.control",
+				"source.c constant.other.color",
+				"source.c punctuation",
+				"source.c meta.tag",
+				"source.c punctuation.definition.tag",
+				"source.c punctuation.separator.inheritance.php",
+				"source.c punctuation.definition.tag.html",
+				"source.c punctuation.definition.tag.begin.html",
+				"source.c punctuation.definition.tag.end.html",
+				"source.c punctuation.section.embedded",
+				"source.c keyword.other.template",
+				"source.c keyword.other.substitution"
 			],
 			"settings": {
 				"foreground": "#3db1ff"
@@ -100,6 +120,7 @@
 			"name": "Keyword",
 			"scope": [
 				"keyword",
+				"source.c keyword"
 			],
 			"settings": {
 				"foreground": "#fafafa"
@@ -108,7 +129,8 @@
 		{
 			"name": "Arithmetic Operators",
 			"scope": [
-				"keyword.operator.arithmetic"
+				"keyword.operator.arithmetic",
+				"source.c keyword.operator.arithmetic"
 			],
 			"settings": {
 				"foreground": "#fafafa"
@@ -117,7 +139,8 @@
 		{
 			"name": "Logical Operators",
 			"scope": [
-				"keyword.operator.logical"
+				"keyword.operator.logical",
+				"source.c keyword.operator.logical"
 			],
 			"settings": {
 				"foreground": "#fafafa"
@@ -128,7 +151,10 @@
 			"scope": [
 				"entity.name.tag",
 				"meta.tag.sgml",
-				"markup.deleted.git_gutter"
+				"markup.deleted.git_gutter",
+				"source.c entity.name.tag",
+				"source.c meta.tag.sgml",
+				"source.c markup.deleted.git_gutter"
 			],
 			"settings": {
 				"foreground": "#003bb2"
@@ -138,7 +164,9 @@
 			"name": "User-defined Function",
 			"scope": [
 				"entity.name.function",
-				"variable.function"
+				"variable.function",
+				"source.c entity.name.function",
+				"source.c variable.function"
 			],
 			"settings": {
 				"foreground": "#2d73ff"
@@ -153,7 +181,14 @@
 				"support.function.builtin",
 				"support.function.library",
 				"support.function.external",
-				"support.function.stdlib"
+				"support.function.stdlib",
+				"source.c support.function",
+				"source.c keyword.other.special-method",
+				"source.c meta.function-call.generic",
+				"source.c support.function.builtin",
+				"source.c support.function.library",
+				"source.c support.function.external",
+				"source.c support.function.stdlib"
 			],
 			"settings": {
 				"foreground": "#003a97"
@@ -162,7 +197,8 @@
 		{
 			"name": "Block Level Variables",
 			"scope": [
-				"meta.block variable.other"
+				"meta.block variable.other",
+				"source.c meta.block variable.other"
 			],
 			"settings": {
 				"foreground": "#5434c7"
@@ -173,7 +209,10 @@
 			"scope": [
 				"support.other.variable",
 				"string.other.link",
-				"meta.function-call.parameter"
+				"meta.function-call.parameter",
+				"source.c support.other.variable",
+				"source.c string.other.link",
+				"source.c meta.function-call.parameter"
 			],
 			"settings": {
 				"foreground": "#3db1ff"
@@ -182,7 +221,8 @@
 		{
 			"name": "Number",
 			"scope": [
-				"constant.numeric"
+				"constant.numeric",
+				"source.c constant.numeric"
 			],
 			"settings": {
 				"foreground": "#00a8f7"
@@ -191,7 +231,8 @@
 		{
 			"name": "Function Argument",
 			"scope": [
-				"variable.parameter"
+				"variable.parameter",
+				"source.c variable.parameter"
 			],
 			"settings": {
 				"foreground": "#3db1ff"
@@ -200,7 +241,8 @@
 		{
 			"name": "Boolean Constants",
 			"scope": [
-				"constant.language.boolean"
+				"constant.language.boolean",
+				"source.c constant.language.boolean"
 			],
 			"settings": {
 				"foreground": "#00a8f7"
@@ -214,7 +256,13 @@
 				"constant.character",
 				"constant.escape",
 				"keyword.other.unit",
-				"keyword.other"
+				"keyword.other",
+				"source.c constant.language",
+				"source.c support.constant",
+				"source.c constant.character",
+				"source.c constant.escape",
+				"source.c keyword.other.unit",
+				"source.c keyword.other"
 			],
 			"settings": {
 				"foreground": "#00a8f7"
@@ -229,7 +277,14 @@
 				"entity.other.inherited-class",
 				"markup.heading",
 				"markup.inserted.git_gutter",
-				"meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
+				"meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js",
+				"source.c string",
+				"source.c constant.other.symbol",
+				"source.c constant.other.key",
+				"source.c entity.other.inherited-class",
+				"source.c markup.heading",
+				"source.c markup.inserted.git_gutter",
+				"source.c meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
 			],
 			"settings": {
 				"foreground": "#00a8f7"
@@ -245,7 +300,15 @@
 				"meta.use.php",
 				"support.other.namespace.php",
 				"markup.changed.git_gutter",
-				"support.type.sys-types"
+				"support.type.sys-types",
+				"source.c entity.name",
+				"source.c support.type",
+				"source.c support.class",
+				"source.c support.other.namespace.use.php",
+				"source.c meta.use.php",
+				"source.c support.other.namespace.php",
+				"source.c markup.changed.git_gutter",
+				"source.c support.type.sys-types"
 			],
 			"settings": {
 				"foreground": "#439cff"
@@ -254,7 +317,8 @@
 		{
 			"name": "Entity Types",
 			"scope": [
-				"support.type"
+				"support.type",
+				"source.c support.type"
 			],
 			"settings": {
 				"foreground": "#00a8f7"
@@ -268,7 +332,8 @@
 				"source.scss support.type.property-name",
 				"source.less support.type.property-name",
 				"source.stylus support.type.property-name",
-				"source.postcss support.type.property-name"
+				"source.postcss support.type.property-name",
+				"source.c support.type.property-name"
 			],
 			"settings": {
 				"foreground": "#B2CCD6"
@@ -279,7 +344,10 @@
 			"scope": [
 				"entity.name.module.js",
 				"variable.import.parameter.js",
-				"variable.other.class.js"
+				"variable.other.class.js",
+				"source.c entity.name.module.js",
+				"source.c variable.import.parameter.js",
+				"source.c variable.other.class.js"
 			],
 			"settings": {
 				"foreground": "#01ffdd"
@@ -288,7 +356,8 @@
 		{
 			"name": "Language methods",
 			"scope": [
-				"variable.language"
+				"variable.language",
+				"source.c variable.language"
 			],
 			"settings": {
 				"fontStyle": "italic",
@@ -298,7 +367,8 @@
 		{
 			"name": "entity.name.method.js",
 			"scope": [
-				"entity.name.method.js"
+				"entity.name.method.js",
+				"source.c entity.name.method.js"
 			],
 			"settings": {
 				"fontStyle": "italic",
@@ -309,7 +379,9 @@
 			"name": "meta.method.js",
 			"scope": [
 				"meta.class-method.js entity.name.function.js",
-				"variable.function.constructor"
+				"variable.function.constructor",
+				"source.c meta.class-method.js entity.name.function.js",
+				"source.c variable.function.constructor"
 			],
 			"settings": {
 				"foreground": "#82AAFF"
@@ -318,7 +390,8 @@
 		{
 			"name": "Attributes",
 			"scope": [
-				"entity.other.attribute-name"
+				"entity.other.attribute-name",
+				"source.c entity.other.attribute-name"
 			],
 			"settings": {
 				"foreground": "#C792EA"
@@ -328,7 +401,9 @@
 			"name": "HTML Attributes",
 			"scope": [
 				"text.html.basic entity.other.attribute-name.html",
-				"text.html.basic entity.other.attribute-name"
+				"text.html.basic entity.other.attribute-name",
+				"source.c text.html.basic entity.other.attribute-name.html",
+				"source.c text.html.basic entity.other.attribute-name"
 			],
 			"settings": {
 				"fontStyle": "italic",
@@ -338,7 +413,8 @@
 		{
 			"name": "CSS Classes",
 			"scope": [
-				"entity.other.attribute-name.class"
+				"entity.other.attribute-name.class",
+				"source.c entity.other.attribute-name.class"
 			],
 			"settings": {
 				"foreground": "#FFCB6B"
@@ -347,7 +423,8 @@
 		{
 			"name": "CSS ID's",
 			"scope": [
-				"source.sass keyword.control"
+				"source.sass keyword.control",
+				"source.c source.sass keyword.control"
 			],
 			"settings": {
 				"foreground": "#82AAFF"
@@ -356,7 +433,8 @@
 		{
 			"name": "Inserted",
 			"scope": [
-				"markup.inserted"
+				"markup.inserted",
+				"source.c markup.inserted"
 			],
 			"settings": {
 				"foreground": "#95f800"
@@ -365,7 +443,8 @@
 		{
 			"name": "Deleted",
 			"scope": [
-				"markup.deleted"
+				"markup.deleted",
+				"source.c markup.deleted"
 			],
 			"settings": {
 				"foreground": "#da1738"
@@ -374,7 +453,8 @@
 		{
 			"name": "Changed",
 			"scope": [
-				"markup.changed"
+				"markup.changed",
+				"source.c markup.changed"
 			],
 			"settings": {
 				"foreground": "#C792EA"
@@ -383,7 +463,8 @@
 		{
 			"name": "Regular Expressions",
 			"scope": [
-				"string.regexp"
+				"string.regexp",
+				"source.c string.regexp"
 			],
 			"settings": {
 				"foreground": "#89DDFF"
@@ -392,7 +473,8 @@
 		{
 			"name": "Escape Characters",
 			"scope": [
-				"constant.character.escape"
+				"constant.character.escape",
+				"source.c constant.character.escape"
 			],
 			"settings": {
 				"foreground": "#89DDFF"
@@ -403,7 +485,10 @@
 			"scope": [
 				"*url*",
 				"*link*",
-				"*uri*"
+				"*uri*",
+				"source.c *url*",
+				"source.c *link*",
+				"source.c *uri*"
 			],
 			"settings": {
 				"fontStyle": "underline"
@@ -413,7 +498,9 @@
 			"name": "Decorators",
 			"scope": [
 				"tag.decorator.js entity.name.tag.js",
-				"tag.decorator.js punctuation.definition.tag.js"
+				"tag.decorator.js punctuation.definition.tag.js",
+				"source.c tag.decorator.js entity.name.tag.js",
+				"source.c tag.decorator.js punctuation.definition.tag.js"
 			],
 			"settings": {
 				"fontStyle": "italic",
@@ -423,7 +510,8 @@
 		{
 			"name": "ES7 Bind Operator",
 			"scope": [
-				"source.js constant.other.object.key.js string.unquoted.label.js"
+				"source.js constant.other.object.key.js string.unquoted.label.js",
+				"source.c source.js constant.other.object.key.js string.unquoted.label.js"
 			],
 			"settings": {
 				"fontStyle": "italic",
@@ -433,7 +521,8 @@
 		{
 			"name": "JSON Key - Level 0",
 			"scope": [
-				"source.json meta.structure.dictionary.json support.type.property-name.json"
+				"source.json meta.structure.dictionary.json support.type.property-name.json",
+				"source.c source.json meta.structure.dictionary.json support.type.property-name.json"
 			],
 			"settings": {
 				"foreground": "#fafafa"
@@ -442,7 +531,8 @@
 		{
 			"name": "JSON Key - Level 1",
 			"scope": [
-				"source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
+				"source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
+				"source.c source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
 			],
 			"settings": {
 				"foreground": "#a0dcf8"
@@ -451,7 +541,8 @@
 		{
 			"name": "JSON Key - Level 2",
 			"scope": [
-				"source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
+				"source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
+				"source.c source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
 			],
 			"settings": {
 				"foreground": "#3db1ff"
@@ -460,7 +551,8 @@
 		{
 			"name": "JSON Key - Level 3",
 			"scope": [
-				"source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
+				"source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
+				"source.c source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
 			],
 			"settings": {
 				"foreground": "#1379ec"
@@ -469,7 +561,8 @@
 		{
 			"name": "JSON Key - Level 4",
 			"scope": [
-				"source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
+				"source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
+				"source.c source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
 			],
 			"settings": {
 				"foreground": "#0f36e4"
@@ -478,61 +571,8 @@
 		{
 			"name": "JSON Key - Level 5",
 			"scope": [
-				"source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
-			],
-			"settings": {
-				"foreground": "#1202a8"
-			}
-		},
-		{
-			"name": "JSON Key - Level 0",
-			"scope": [
-				"source.json meta.structure.dictionary.json support.type.property-name.json"
-			],
-			"settings": {
-				"foreground": "#fafafa"
-			}
-		},
-		{
-			"name": "JSON Key - Level 1",
-			"scope": [
-				"source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
-			],
-			"settings": {
-				"foreground": "#a0dcf8"
-			}
-		},
-		{
-			"name": "JSON Key - Level 2",
-			"scope": [
-				"source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
-			],
-			"settings": {
-				"foreground": "#3db1ff"
-			}
-		},
-		{
-			"name": "JSON Key - Level 3",
-			"scope": [
-				"source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
-			],
-			"settings": {
-				"foreground": "#1379ec"
-			}
-		},
-		{
-			"name": "JSON Key - Level 4",
-			"scope": [
-				"source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
-			],
-			"settings": {
-				"foreground": "#0f36e4"
-			}
-		},
-		{
-			"name": "JSON Key - Level 5",
-			"scope": [
-				"source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
+				"source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
+				"source.c source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
 			],
 			"settings": {
 				"foreground": "#1202a8"
