@@ -2,7 +2,7 @@
   "name": "epi-style",
   "displayName": "EPI-style",
   "description": "theme based on EPITECH colors",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "Etienne-P",
   "engines": {
     "vscode": "^1.96.0"
